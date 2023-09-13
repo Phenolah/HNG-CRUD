@@ -5,7 +5,11 @@ This is a Django project that implements a CRUD (Create, Read, Update, Delete) A
 Before you begin, ensure you have met the following requirements:
 
 - Python 3.x installed locally.
+
+
 - Virtual environment (`venv`) or `pipenv` for managing dependencies.
+
+
 - Basic understanding of Django and Django Rest Framework.
 
 ## Steps to run
@@ -16,12 +20,14 @@ https://github.com/Phenolah/HNG-CRUD
 - Create a virtual environment
 
 
-- From your terminal, navigate into the Stagetwo directory and create a virtual environment using 
-python -m venv venv
+- From your terminal, navigate into the ProfileProject directory and create a virtual environment using 
+'''python -m venv venv'''
 Activate the virtual environment
 
 
 - Activate the virtual environment using 
+
+
 .\venv\Scripts\activate on windows and source venv/bin/activate  for mac and Linux
 
 
