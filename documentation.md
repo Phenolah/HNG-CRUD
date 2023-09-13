@@ -3,7 +3,7 @@ This is a Django project that implements a CRUD (Create, Read, Update, Delete) A
 
 - #Endpoints
 
-- ##Create a Person
+##Create a Person
 
 Endpoint: POST /api
 
@@ -24,7 +24,7 @@ Response Format (Success):
 }
 </code>
 
-- ##Retrieve a Person
+##Retrieve a Person
 
 
 Endpoint: GET /api/{id}
@@ -39,7 +39,7 @@ Response Format (Success):
 }
 </code>
 
-- ##Update a Person
+##Update a Person
 
 
 Endpoint: PUT /api/{id}
@@ -62,7 +62,7 @@ Response Format (Success):
 }
 </code>
 
-- ##Delete a Person
+##Delete a Person
 
 
  Endpoint: DELETE /api/{id}
