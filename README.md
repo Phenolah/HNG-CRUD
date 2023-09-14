@@ -96,3 +96,40 @@ Your api should now be accesible on
 <code>localhost:<port>/api. </code> 
 
 For a detailed guide on how to use the endpoints in this project, refer to the https://github.com/Phenolah/HNG-CRUD/blob/main/documentation.md file located within this project
+
+<image url>
+classDiagram
+    class Person {
+        - id: int
+        - name: string
+    }
+
+    class PersonSerializer {
+        <<Serializer>>
+        - class: Person
+    }
+
+    class PersonListCreateView {
+        <<APIView>>
+        - queryset: Person
+        - serializer_class: PersonSerializer
+        + post(request): Response
+        + get(request): Response
+    }
+
+    class PersonRetrieveUpdateDeleteView {
+        <<APIView>>
+        - queryset: Person
+        - serializer_class: PersonSerializer
+        + get(request): Response
+        + put(request): Response
+        + patch(request): Response
+        + delete(request): Response
+    }
+    
+    PersonListCreateView --|> Person
+    PersonRetrieveUpdateDeleteView --|> Person
+    PersonSerializer --|> Person
+    PersonSerializer --|> PersonListCreateView
+    PersonSerializer --|> PersonRetrieveUpdateDeleteView
+</image url>
