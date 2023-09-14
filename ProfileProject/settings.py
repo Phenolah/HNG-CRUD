@@ -91,9 +91,12 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-database_url = os.environ.get("DATABASE_URL")
-DATABASES['default'] = dj_database_url.parse(database_url)
 
+# Check if the DATABASE_URL environment variable is set
+if 'DATABASE_URL' in os.environ:
+    # Parse the DATABASE_URL and update the 'default' database
+    database_url = os.environ.get("DATABASE_URL")
+    DATABASES['default'] = dj_database_url.parse(database_url)
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
