@@ -10,13 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
-import os
-import dj_database_url
 from pathlib import Path
-from dotenv import load_dotenv
-
-# Initialise environment variables
-load_dotenv()
 
 
 
@@ -92,11 +86,7 @@ DATABASES = {
     }
 }
 
-# Check if the DATABASE_URL environment variable is set
-if 'DATABASE_URL' in os.environ:
-    # Parse the DATABASE_URL and update the 'default' database
-    database_url = os.environ.get("DATABASE_URL")
-    DATABASES['default'] = dj_database_url.parse(database_url)
+
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
 
