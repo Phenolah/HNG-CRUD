@@ -10,7 +10,7 @@ Before you begin, ensure you have met the following requirements:
 - Virtual environment (`venv`) or `pipenv` for managing dependencies.
 
 
-- Basic understanding of Django and Django Rest Framework.
+- Basic understanding of Python and Django Rest Framework.
 
 # Steps to run
 1.Clone the github repo
